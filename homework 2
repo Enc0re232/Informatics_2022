@@ -1,0 +1,17 @@
+# task1
+def correct_polish_letters(st):  
+    pol=pol = {"ą": "a", "ć": "c", "ę": "e", "ł": "l", "ń": "n", "ó": "o", "ś": "s", "ź": "z", "ż": "z"} 
+    return "".join([pol[c] if c in pol else c for c in st])
+    
+    # task2
+def find_all(array, n):
+    arr = []
+    for el in range(len(array)-1):
+        if array[el] == n:
+            arr.append(el) 
+    return arr 
+    
+    
+    # task3
+def sum_of_minimums(numbers):
+    return sum(map(min, numbers))
